@@ -1,0 +1,23 @@
+*{box-sizing:border-box;margin:0}
+:root{--bg:#fbf6ee;--fg:#2a2118;--mut:#6b5d4d;--card:#fff;--ac:#c2410c}
+@media(prefers-color-scheme:dark){:root{--bg:#17130f;--fg:#f7efe4;--mut:#c9b9a3;--card:#241d16;--ac:#e06a2c}}
+body{background:var(--bg);color:var(--fg);font:1.05rem/1.6 "Nunito",system-ui,sans-serif;overflow-x:hidden}
+h1,h2{font-family:"Fraunces",system-ui,serif;line-height:1.05}
+:focus-visible{outline:3px solid var(--ac);outline-offset:3px;border-radius:8px}
+.top{background:var(--fg);color:var(--bg);text-align:center;font-size:.85rem;padding:8px 12px}
+.hd{position:relative;text-align:center;padding:70px 20px 50px}
+.hd h1{font-size:clamp(2.6rem,9vw,5.4rem);max-width:15ch;margin:0 auto 16px}
+.hd em{font-style:normal;background:linear-gradient(transparent 62%,#ffd28a 62%)}
+.hd p{color:var(--mut);max-width:44ch;margin:auto}
+.hd i{position:absolute;z-index:-1;border-radius:50%;filter:blur(55px);opacity:.5;animation:fl 12s ease-in-out infinite alternate}
+@keyframes fl{to{transform:translate(30px,30px) scale(1.15)}}
+.g{max-width:1150px;margin:auto;padding:10px 20px 70px;display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.c{display:block;text-decoration:none;border-radius:34px;overflow:hidden;background:var(--card);box-shadow:0 24px 50px -26px rgba(0,0,0,.5);transition:transform .3s;opacity:0;transform:translateY(26px)}
+.c.in{opacity:1;transform:none;transition:opacity .7s,transform .3s}
+.c:hover{transform:translateY(-8px) rotate(-.6deg)}
+.p{padding:18px 18px 0;height:250px;display:flex;align-items:center;justify-content:center}
+.p .art{max-height:230px}
+.b{padding:16px 22px 24px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.b h2{font-size:1.45rem}.b span{color:var(--mut);font-size:.92rem}.b b{font-size:1.6rem}
+footer{background:var(--fg);color:var(--bg);text-align:center;padding:28px 20px;font-size:.95rem}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.c{opacity:1;transform:none}}

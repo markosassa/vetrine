@@ -1,0 +1,6 @@
+:root{--bg:#fdf6f4;--card:#ffffff;--fg:#3a2c2e;--mut:#6e5b5e;--ac:#9c5260;--ac2:#b8cdb4;--soft:#eef3ec;--hl:#e8c4ca;--r:44px;--fh:"Cormorant Garamond";--ft:"Jost";--pat:radial-gradient(circle,transparent 0 18px,var(--ac2) 19px 20px,transparent 21px) 0 0/48px 48px;--po:.4;}@media(prefers-color-scheme:dark){:root{--bg:#1c1819;--card:#282223;--fg:#f6ebe9;--mut:#cdb9bb;--ac:#b36474;--ac2:#5d7a60;--soft:#222a22;--hl:#5a3a42;}}
+.ic{stroke-width:1.1!important;width:50px;height:50px}
+em{background:none;font-style:italic;color:var(--ac)}
+.hero h1,h2{font-weight:500}
+.hero h1{font-size:clamp(3rem,10vw,6.2rem)}
+.btn,.tel{letter-spacing:.04em}

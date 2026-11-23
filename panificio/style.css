@@ -1,0 +1,5 @@
+:root{--bg:#fbf4e4;--card:#fffaf0;--fg:#3a2a12;--mut:#6f5a35;--ac:#a56a0f;--ac2:#e8c36a;--soft:#f3e4bf;--hl:#efd48a;--r:16px;--fh:"Fraunces";--ft:"Karla";--pat:repeating-linear-gradient(60deg,transparent 0 10px,var(--ac2) 10px 11px,transparent 11px 20px),repeating-linear-gradient(-60deg,transparent 0 10px,var(--ac2) 10px 11px,transparent 11px 20px);--po:.2;}@media(prefers-color-scheme:dark){:root{--bg:#1e1709;--card:#2b2110;--fg:#f8ecd0;--mut:#d4bd8c;--ac:#b97a12;--ac2:#8a6a20;--soft:#281f0d;--hl:#6b5217;}}
+em{background:linear-gradient(transparent 70%,var(--hl) 70%)}
+.hero h1{font-weight:900}
+.card{border:2px dashed var(--ac2)}
+h2{font-weight:900}

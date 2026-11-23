@@ -1,0 +1,10 @@
+:root{--bg:#eef1f5;--card:#ffffff;--fg:#101c2e;--mut:#46546a;--ac:#1450c8;--ac2:#8a98ab;--soft:#dfe5ec;--hl:#bcd0f5;--r:6px;--fh:"Barlow Condensed";--ft:"Barlow";--pat:linear-gradient(var(--ac2) 1px,transparent 1px) 0 0/40px 40px,linear-gradient(90deg,var(--ac2) 1px,transparent 1px) 0 0/40px 40px;--po:.18;}@media(prefers-color-scheme:dark){:root{--bg:#0d131d;--card:#17202e;--fg:#e8eef7;--mut:#9fb0c6;--ac:#2f6be0;--ac2:#5a6b82;--soft:#121a27;--hl:#1c3a78;}}
+.hero h1,h2{text-transform:uppercase;font-weight:800}
+.hero h1{letter-spacing:-.01em;line-height:.95}
+em{background:var(--ac);color:#fff;padding:0 .15em}
+.pr{font-size:2.7rem;line-height:1}
+.tm{font:700 1.4rem var(--fh);text-transform:uppercase}
+.card{border-left:6px solid var(--ac)}
+.gear{animation:spin 40s linear infinite;transform-box:fill-box;transform-origin:center}
+.gear.r{animation-direction:reverse;animation-duration:20s}
+@keyframes spin{to{transform:rotate(360deg)}}

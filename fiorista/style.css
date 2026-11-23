@@ -1,0 +1,5 @@
+:root{--bg:#faf5fc;--card:#ffffff;--fg:#2d1b3d;--mut:#62507a;--ac:#6d3aa0;--ac2:#8fc79a;--soft:#efe6f6;--hl:#d9c2ee;--r:54px 16px 54px 16px;--fh:"DM Serif Display";--ft:"Quicksand";--pat:radial-gradient(circle,var(--ac2) 3px,transparent 4px) 0 0/44px 44px,radial-gradient(circle,var(--hl) 3px,transparent 4px) 22px 22px/44px 44px;--po:.35;}@media(prefers-color-scheme:dark){:root{--bg:#170f20;--card:#241731;--fg:#f1e8fa;--mut:#c3b0da;--ac:#8a55c4;--ac2:#3f7a4c;--soft:#1e1429;--hl:#4a2d6a;}}
+em{background:none;font-style:italic;color:var(--ac)}
+.hero h1,h2{font-weight:400}
+.card{border:2px solid var(--hl)}
+.btn{border-radius:99px 30px 99px 30px}

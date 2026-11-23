@@ -1,0 +1,5 @@
+:root{--bg:#effcfa;--card:#ffffff;--fg:#0d3b3a;--mut:#3f6b69;--ac:#087c78;--ac2:#7fe0d4;--soft:#d6f5f0;--hl:#aef0e5;--r:30px;--fh:"Baloo 2";--ft:"Nunito Sans";--pat:repeating-linear-gradient(-45deg,transparent 0 24px,var(--ac2) 24px 26px);--po:.25;}@media(prefers-color-scheme:dark){:root{--bg:#0a1c1c;--card:#112a2a;--fg:#e2fbf8;--mut:#9ccfc9;--ac:#0a857f;--ac2:#1f7a72;--soft:#0e2424;--hl:#145a55;}}
+em{background:linear-gradient(transparent 60%,var(--ac2) 60%)}
+.hero h1,h2{font-weight:800}
+.steps li{border-top:6px dashed var(--ac2)}
+.steps li:nth-child(2){margin-top:22px}.steps li:nth-child(3){margin-top:44px}

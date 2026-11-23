@@ -1,0 +1,7 @@
+:root{--bg:#fff6e5;--card:#fffdf6;--fg:#3b1510;--mut:#75443a;--ac:#c8281e;--ac2:#f6b73c;--soft:#fde7c0;--hl:#ffd28a;--r:26px;--fh:"Alfa Slab One";--ft:"Nunito";--pat:conic-gradient(var(--ac2) 25%,transparent 0 50%,var(--ac2) 0 75%,transparent 0) 0 0/64px 64px;--po:.14;}@media(prefers-color-scheme:dark){:root{--bg:#231210;--card:#321b17;--fg:#fff0dc;--mut:#e0b9a6;--ac:#d33526;--ac2:#c8841c;--soft:#2d1815;--hl:#7a3a1f;}}
+em{background:none;color:var(--ac)}
+.hero h1{text-transform:uppercase;letter-spacing:-.01em;font-weight:400}
+h2{font-weight:400}
+.fall{animation:fall 4.2s ease-in infinite;transform-box:fill-box}
+@keyframes fall{0%{transform:translateY(-150px) rotate(0);opacity:0}15%{opacity:1}65%{transform:translateY(150px) rotate(120deg);opacity:1}100%{transform:translateY(150px) rotate(120deg);opacity:0}}
+.card{border:3px solid var(--ac2)}
