@@ -1,4 +1,4 @@
-:root{--bg:#fbf3f6;--card:#ffffff;--fg:#3a1432;--mut:#6e4a66;--ac:#7b2d6e;--ac2:#f4a6c0;--soft:#f6e1ea;--hl:#f8c3d6;--r:28px;--fh:"Playfair Display";--ft:"DM Sans";--pat:radial-gradient(circle at 1px 1px,var(--ac2) 1.5px,transparent 2px) 0 0/26px 26px;--po:.45;}@media(prefers-color-scheme:dark){:root{--bg:#1f0d1c;--card:#2e1629;--fg:#fbeaf3;--mut:#d2aac6;--ac:#b8458f;--ac2:#7b2d6e;--soft:#2a1226;--hl:#6a2a5e;}}
+:root{--bg:#eeeeee;--card:#ffffff;--fg:#111111;--mut:#5c5c5c;--ac:#111111;--ac2:#bdbdbd;--soft:#e2e2e2;--hl:#cfcfcf;--r:28px;--fh:"Playfair Display";--ft:"DM Sans";--pat:radial-gradient(circle at 1px 1px,var(--ac2) 1.5px,transparent 2px) 0 0/26px 26px;--po:.45;}@media(prefers-color-scheme:dark){:root{--bg:#111111;--card:#1c1c1c;--fg:#eeeeee;--mut:#a8a8a8;--ac:#6e6e6e;--ac2:#3a3a3a;--soft:#181818;--hl:#2e2e2e;}}
 em{background:none;text-decoration:underline wavy var(--ac2);text-underline-offset:.14em;text-decoration-thickness:5px}
 .hero h1{font-weight:800}
 .locks{display:flex;flex-wrap:wrap;gap:26px 24px;justify-content:center;padding-bottom:34px}
@@ -23,5 +23,9 @@ html,body{overflow-x:hidden;max-width:100%}
 .cday:hover{background:var(--soft)}
 .cday.on{background:var(--ac);color:#fff;border-color:var(--ac)}
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:20px}
-.gitem{aspect-ratio:3/4;border-radius:var(--r);background:var(--g);display:grid;place-items:center;color:#fff;font-weight:700;font-size:1.1rem;box-shadow:0 14px 28px -14px rgba(0,0,0,.4);transition:transform .3s}
+.gitem{aspect-ratio:3/4;border-radius:var(--r);background:var(--g);display:grid;place-items:center;color:#fff;font-weight:700;font-size:1.1rem;box-shadow:0 14px 28px -14px rgba(0,0,0,.4);transition:transform .3s;overflow:hidden}
+.gitem img{width:100%;height:100%;object-fit:cover;display:block}
 .gitem:hover{transform:scale(1.04)}
+.brandcard{max-width:640px;margin:0 auto;padding:32px 24px;text-align:center}
+.brandcard p{color:var(--mut);margin-top:10px}
+.brandcard .btn{margin-top:18px}
