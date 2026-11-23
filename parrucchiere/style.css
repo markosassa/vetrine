@@ -6,6 +6,7 @@ em{background:none;text-decoration:underline wavy var(--ac2);text-underline-offs
 .lock::after{content:"";position:absolute;inset:8% 28% 10% 22%;border-radius:50%;background:linear-gradient(rgba(255,255,255,.55),transparent)}
 .lock:hover{transform:rotate(-6deg) scale(1.06)}
 .lock span{position:absolute;bottom:-28px;left:50%;transform:translateX(-50%);font-size:.8rem;white-space:nowrap;color:var(--mut)}
+.mbar a{font-size:.9rem;padding:10px 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .team{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px}
 .team .card{text-align:center;padding:24px 16px}
 .avatar{width:72px;height:72px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;font-size:1.8rem;font-weight:800;color:#fff;background:var(--c);box-shadow:0 12px 24px -10px var(--c)}
