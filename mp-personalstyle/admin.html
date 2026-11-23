@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin · Salone Aurora</title><link rel="stylesheet" href="/assets/base.css"><link rel="stylesheet" href="style.css"><style>.admin{max-width:900px;margin:0 auto;padding:24px}.tbl{width:100%;border-collapse:collapse}.tbl th,.tbl td{padding:10px;border-bottom:1px solid var(--soft);text-align:left}.tbl th{color:var(--mut)}.act{display:flex;gap:8px}.btn-sm{padding:6px 12px;border-radius:8px;border:0;background:var(--ac);color:#fff;cursor:pointer;font-weight:600}.btn-sm.alt{background:var(--soft);color:var(--fg)}.empty{padding:40px;text-align:center;color:var(--mut)}</style></head>
+<body>
+<header class="h"><a class="logo" href="index.html">Salone Aurora</a><span class="tel">Admin</span></header>
+<main class="admin">
+<h1>Prenotazioni</h1>
+<div id="list" style="overflow-x:auto"></div>
+</main>
+<script>
+function render(){
+  const arr=JSON.parse(localStorage.getItem('prenotazioni')||'[]');
+  const c=document.querySelector('#list');
+  if(!arr.length){c.innerHTML='<div class="empty">Nessuna prenotazione.</div>';return;}
+  let html='<table class="tbl"><thead><tr><th>Data</th><th>Cliente</th><th>Telefono</th><th>Servizi</th><th>Giorno/Ora</th><th>Azioni</th></tr></thead><tbody>';
+  arr.forEach((b,i)=>{html+='<tr><td>'+new Date(b.ts).toLocaleString('it-IT')+'</td><td>'+ (b.nome||'-') +'</td><td>'+b.tel+'</td><td>'+b.servizi.join(', ')+'</td><td>'+b.giorno+' '+b.ora+'</td><td class="act"><button class="btn-sm" onclick="notify('+i+')">Notifica</button><button class="btn-sm alt" onclick="del('+i+')">Elimina</button></td></tr>';});
+  html+='</tbody></table>';
+  c.innerHTML=html;
+}
+function notify(i){const arr=JSON.parse(localStorage.getItem('prenotazioni')||'[]');const b=arr[i];alert('Notifica inviata a '+b.tel+': conferma prenotazione per '+b.giorno+' '+b.ora);}
+function del(i){const arr=JSON.parse(localStorage.getItem('prenotazioni')||'[]');arr.splice(i,1);localStorage.setItem('prenotazioni',JSON.stringify(arr));render();}
+render();
+</script>
+</body></html>
