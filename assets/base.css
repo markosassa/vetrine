@@ -58,7 +58,7 @@ fieldset{border:0;padding:0}
 .chip input:checked+span{background:var(--ac);color:#fff}
 .chip input:focus-visible+span{outline:3px solid var(--fg);outline-offset:2px}
 .row{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));margin-bottom:18px}
-select,input[type=text]{width:100%;padding:12px;border-radius:12px;border:2px solid var(--soft);background:var(--bg);color:var(--fg);font:inherit}
+select,input[type=text],input[type=tel]{width:100%;padding:12px;border-radius:12px;border:2px solid var(--soft);background:var(--bg);color:var(--fg);font:inherit}
 #msg{margin-top:10px;color:var(--ac);font-weight:700;min-height:1.4em}
 .rev blockquote{font-size:1.05rem;margin-bottom:12px}
 .st{color:var(--ac2);letter-spacing:3px;font-size:1.1rem}
